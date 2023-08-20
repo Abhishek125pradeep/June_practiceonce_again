@@ -71,3 +71,21 @@ case num<=45:
                 console.log('nothing');
 
 }
+
+
+//nested if;
+let x=15;
+var y=25;
+
+if( x<=15){
+    if(y<=25){
+        console.log('y is print');
+    }
+}
+
+let num1 = 10;
+do {
+ num1++;
+ console.log('print');
+
+} while (num1 < 15)

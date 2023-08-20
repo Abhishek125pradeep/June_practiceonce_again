@@ -188,3 +188,10 @@ function test(){
 
 var num7=100;
 num7 <= 100 ? console.log('infuence') : console.log('ininfluence');
+
+
+
+let x4="";
+let y6;
+let z7= null;
+console.log(typeof(z7));
