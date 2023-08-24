@@ -58,12 +58,12 @@ let vegitable2=[];
 for(i=0;i<vegitable1.length;i++){
     vegitable2.push(vegitable1[i])
 }
-console.log('vegitable',vegitable2);
-var vegitable3=[];
-vegitable1.forEach(ele =>{
-    vegitable3.push(ele)
-})
-console.log('vegitable3',vegitable3);
+// console.log('vegitable',vegitable2);
+// var vegitable3=[];
+// vegitable1.forEach(ele =>{
+//     vegitable3.push(ele)
+
+('vegitable3',vegitable3);
 
 //spread operators
 let newcars3=[...cars];
@@ -102,3 +102,129 @@ for(i=0;i<colors1.length;i++){
     color2.push(colors1[i])
 }
 console.log('color',color2);
+let colors5=[];
+colors1.forEach(ele =>{
+    colors5 .push(ele)
+})
+console.log('colors5',colors5);
+color6=[...colors1]
+console.log(color6);
+
+var fruits8=['apple','orange','banana','chiku'];
+var fruits9=[];
+fruits8.forEach(ele =>{
+    fruits9.push(ele)
+})
+console.log(fruits9);
+
+
+for(i=0;i<cars.length;i++){
+    newcars5.delete
+}
+
+
+
+//map
+let employee= [
+  {name:"abhi",age:25},
+  {name:"raju",age:33},
+  {name:"ajit",age:54},
+  {name:"sharukh",age:44}  
+]
+let employeenames=[];
+ employee.map(employeeData=>{
+    employeenames.push() 
+})
+console.log('employeenames',employeenames);
+
+var employeeage= [];
+employee.map(emplaoyeeages=>{
+    employeeage.push( emplaoyeeages.age)
+})
+console.log("employeeage",employeeage);
+
+
+// function syntax ()
+function test(){
+    let employee= [
+        {name:"abhi",age:25},
+        {name:"raju",age:33},
+        {name:"ajit",age:54},
+        {name:"sharukh",age:44}  
+      ]
+      let employeenames=[];
+       employee.map(employeeData=>{
+          employeenames.push(employeeData) })
+          console.log('employeenames',employeenames);     
+}
+function cascading(){
+    test()
+}
+function addition(){
+    result=30+50;
+    console.log(result);
+}
+
+ result = function addition1(){
+    return result=20+60;
+}
+ function add(add1,add2){
+    console.log(add1+add2);
+ }
+add(45,65);
+
+
+ function add1(num1,num2){
+    return result=num1+num2;
+   
+}
+c=add1(100,55)
+console.log(c);
+
+
+let a1=20;
+let b1=30;
+let c1=50;
+
+
+function calculate(a1,b1){
+return a1+b1
+}
+v=calculate(66,85)
+console.log(v);
+a=25
+rslt=function Mul(){
+    return a*a
+}
+console.log(rslt);
+
+
+
+num4=[40,50,90,55,66,43]
+num6=[];
+num4.forEach(item=>{
+    if(item!=55){
+    num6.push(item)}
+})
+console.log('num6',num6);
+
+
+//shalow copy using spread operator
+let name5=['JAY','AJAY','ATUL','sumit'];
+var againname=[...name5];
+ name5[2]='rajesh';
+againname=[...name5]
+console.log('againname', againname);
+
+
+var char=['ksa','dafdsaf','lal',"sing"]
+var harr=[...char];
+char[1]='gooolu';
+// harr=[...char];
+console.log(harr);
+
+
+
+
+
+
