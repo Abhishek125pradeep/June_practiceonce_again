@@ -195,3 +195,38 @@ let x4="";
 let y6;
 let z7= null;
 console.log(typeof(z7));
+
+
+//boolean to string datta types
+var j= true;
+var o= String(j);
+console.log('j',j);
+console.log(typeof(o));
+console.log(o);
+
+//increament operators
+var akal = 55;
+console.log(akal++);
+console.log(akal++);
+var bal = 75;
+console.log(++bal);
+console.log(bal++);
+//decrement operators
+let lara= 45
+console.log("lara--",lara--)
+console.log("lara",--lara);
+// !=
+var kaju= 45;
+var juka= "45";
+console.log('!=',kaju !== juka);
+
+let huc= 75;
+let kuc= "34";
+console.log(huc !==  kuc);
+
+var GG= 450;
+GG>=430 ? console.log("All Wright") : console.log("All Not Wright");
+
+
+
+

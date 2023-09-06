@@ -54,21 +54,21 @@ switch(marks){
 
 }
 
-var num=85;
-switch(num){
-case num==10:
-console.log('10 number');
-break;
-case num<=45:
-    console.log(' 45number');
-    case num>78:
+var num = 85;
+switch (num) {
+    case num == 10:
+        console.log('10 number');
+        break;
+    case num <= 45:
+        console.log(' 45number');
+    case num > 78:
         console.log("78 number");
         break;
-        case 95:
-            console.log("correct number");
-            break;
-            default:
-                console.log('nothing');
+    case 95:
+        console.log("correct number");
+        break;
+    default:
+        console.log('nothing');
 
 }
 
@@ -89,3 +89,69 @@ do {
  console.log('print');
 
 } while (num1 < 15)
+
+
+
+//if else
+var l=30;
+var o=30;
+// if(l>o){
+//     console.log("condition is true");
+// }
+// else{
+//     console.log("Condition is false");
+// }
+//if we want to check more than two conditions
+
+if (l > o) {
+    console.log("l is greater than o");
+}
+else if (l == o) {// always use equality operators
+    console.log("l is equal to o");
+}
+else if (l < o) {
+    console.log("l less than o");
+}
+else {
+    console.log("nothing");
+}
+//switch case break
+var car = "Murserdies"
+switch (car) {
+    case ("BMW"):
+        console.log("car is no BMW");
+        break;
+    case ("indigo"):
+        console.log("car is not indigo");
+        break;
+    case ("Murserdies"):
+        console.log("yes car is Murserdies");
+        break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

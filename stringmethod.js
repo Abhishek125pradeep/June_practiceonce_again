@@ -77,3 +77,62 @@ var xyz= 'hkuhku';
 xyz=Boolean(xyz);
 console.log("value of xyz is",xyz);
 console.log('typeof xyz',typeof(xyz));
+
+
+let word= "i love Indiasomething";
+let sameword= word.length;
+console.log("sameword",sameword);
+var cut=word.slice(2,6)
+console.log(cut);
+var set=word.slice(-9,0)
+console.log(set);
+let nut=word.substring(2,12);
+console.log(nut);
+
+let rep="i love mumbai but go  i watch Mumbai but isaw Mumbai";
+let per=rep.replaceAll(/mumbai/gi,'puna');
+console.log(per);
+let er=rep.replace(/mumbai/gi,'puna');
+console.log(er);
+
+var fn='ABhishek';
+var Ln='Nagrale';
+var concat=fn+" "+Ln;
+console.log(concat);
+var Fullname= fn.concat(' ',Ln,'enginner')
+console.log(Fullname);
+
+
+let trm="  abhishek nagrlae  ";
+var mtm=trm.trimEnd()
+console.log(mtm);
+console.log(trm);
+ 
+var chart="abhsihhje";
+console.log(chart.charAt(4));
+//split
+
+let spl='12-5-1998';
+console.log(spl.split('-'));
+
+
+//search strings
+
+var  ani='catddddog';
+console.log(ani.indexOf('o'));
+console.log(ani.lastIndexOf('d'));
+  
+
+let natch= "indfia is th best of best";
+console.log(natch.search("best"));//it will return it first match indeex
+
+
+var muth= "how are your how nice you";
+console.log(muth.match('how'));
+console.log(muth.match(/how/g));
+var drop=" please god  please help for one time please help me"
+console.log(drop.match(/ase/g));
+var drop=" Please god  Please help for one time Please help me"
+console.log(drop.includes("please"));
+
+

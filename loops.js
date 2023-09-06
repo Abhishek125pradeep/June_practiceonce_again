@@ -22,7 +22,7 @@
 
 // for (let index = 0; index < cars.length; index++) {
 //    console.log(cars[index]); 
-    
+
 // }
 // for(i in cars){
 //     console.log(cars1[i]);
@@ -30,11 +30,11 @@
 
 // for (let index = 0; index < 15; index++) {
 //   console.log('Abhishek', index);
-    
+
 // }
 // for (let index = 0; index <10; index= index+3) {
 //    console.log("nagrale",index);
-    
+
 // }
 
 // //object in for in loop
@@ -59,7 +59,7 @@
 
 // for (let index = 0; index < cars4.length; index++) {
 //  console.log(cars4[index]);
-    
+
 // }
 // //array
 // var vegi=["spinach",'tomato','Ladyfinger','Chillies','Potato',5155,true,test()]
@@ -80,3 +80,47 @@
 // for(index=0;index<10;i++){
 //     console.log("abhishek"[index]);
 // }
+var cars = ['suzuki', 'i10', 'BMW', "swift", "Thar"]
+for (i = 0; i < cars.length; i++) {
+    console.log('cars', cars[i])
+
+
+}
+// for(;i<cars.length;i++){
+//     console.log(cars[i]);
+// }  //error is define
+
+// for(;;i++){
+//     console.log(cars[i]);
+// } go in infinite loops
+//for(i=0;i<cars.lenghth;) infinite loops
+for (let i in cars) {
+    console.log(cars[i]);
+}
+
+var studentdata = {
+    name: "abhishek",
+    class: 10,
+    sec: 'D',
+    roll: 25
+}
+for (x in studentdata) {
+    console.log(studentdata[x]);
+}
+for (k of cars) {
+    console.log(k);
+}
+
+//do while loop
+j = 10
+do {
+    j++
+    console.log("hellow");
+}
+while (j < 15)
+l = 12
+do {
+    l++
+    console.log(l);
+}
+while (l < 15)

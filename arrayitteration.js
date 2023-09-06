@@ -63,7 +63,7 @@ for(i=0;i<vegitable1.length;i++){
 // vegitable1.forEach(ele =>{
 //     vegitable3.push(ele)
 
-('vegitable3',vegitable3);
+('vegitable3',vegitable2);
 
 //spread operators
 let newcars3=[...cars];
@@ -107,7 +107,7 @@ colors1.forEach(ele =>{
     colors5 .push(ele)
 })
 console.log('colors5',colors5);
-color6=[...colors1]
+let color6=[...colors1]
 console.log(color6);
 
 var fruits8=['apple','orange','banana','chiku'];
@@ -168,18 +168,33 @@ function addition(){
  result = function addition1(){
     return result=20+60;
 }
- function add(add1,add2){
-    console.log(add1+add2);
- }
-add(45,65);
+ 
 
 
  function add1(num1,num2){
     return result=num1+num2;
    
 }
-c=add1(100,55)
-console.log(c);
+add1(100,55)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let a1=20;
@@ -222,9 +237,88 @@ var harr=[...char];
 char[1]='gooolu';
 // harr=[...char];
 console.log(harr);
+//shallow copy
+let numberrr=[25,11,33,24,98,45,66];
+numberrr[3]=77;
+var numberrr1=[...numberrr];
+
+console.log(numberrr1);
+console.log(numberrr1);
+//shallowcopy
+
+var shallow=['badam','Akhrod','Pista','Manuka'];
+
+var shallow1=shallow
+shallow1[1]='Makka';
+
+console.log(shallow);
+console.log(shallow1);
+
+
+
+var empdata=[
+    {name:"Shital", age:45},
+    {name:"kajal",age:65},
+    {name:"ashutosh",age:26},
+    {name:"jay",age:45}
+
+]
+var catchdata=empdata.map(   objemp =>{
+    return objemp.name
+}
+    )
+    console.log("catchdata",catchdata);
+var empage=empdata.map(empobj =>{
+    return empobj.age
+})
+console.log(empage);
+    var studntdata=[{name:"ajay",class:5},
+                   {name:"shahrukh",class:12},
+                   {name:"salman",class:8},
+                   {name:"akshay",class:12}
+ ]
+ var student=studntdata.map( ojstu =>{
+    return ojstu.class
+ })
+ console.log(student);
+ 
+ var studentname=studntdata.map(objstname =>{
+    return objstname.name
+ })
+ console.log(studentname);
+
+ 
+var vegi=[{name: "abhishek",age:54},
+           {name:"Hitesh",age:66},
+        {name:"jayesh", age:23}]
+  var lot=vegi.map(route =>{
+    return route.name
+  })     
+  console.log(lot); 
 
 
 
 
 
 
+
+
+
+
+
+  let found=[{name:'ajayu',age:78},
+{name:"raj",age:14},
+{name:"kat",age:55}]
+
+
+var man=[];
+found.map(some =>{
+    man.push(some.name)
+})
+console.log(man);
+//delet
+var del=['white','green','yellow','blue','orange']
+var led=del.indexOf("yellow");
+console.log(led);
+delete del[led] 
+console.log(del);

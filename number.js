@@ -25,3 +25,28 @@ console.log(num5.toFixed(2));
 
 var num6= 54.65365364;
 console.log(num6.toFixed(3));
+
+
+//number
+
+var num22= 456;
+var num21=String(num22)
+console.log(num22);
+let num23=parseInt(num21)
+let num25=parseInt(num22)
+
+//tofixed
+
+let mum=12.3496
+let mum1=console.log(mum.toFixed(2));
+let mum2=console.log(mum.toFixed(1));
+
+var jum=[11,55,21,33,1,87,96,3,12];
+var kum=jum.toString(jum)
+console.log(jum);
+console.log(kum);
+
+var shops=["cloths shops","Vegitable","COsmatics","Vdo gamew"]
+var pops= shops.pop()
+console.log(pops);
+console.log(shops);
