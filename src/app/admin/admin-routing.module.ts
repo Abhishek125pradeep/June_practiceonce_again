@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdmincompoComponent } from './admincompo/admincompo.component';
+import { AdmincompoComponent } from './admin-login/admincompo.component';
+
 
 const routes: Routes = [
-{path:"admincompo",component:AdmincompoComponent},
+{path:"admin-login",component:AdmincompoComponent},
 
 ];
 
