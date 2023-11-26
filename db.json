@@ -1,7 +1,73 @@
 {
   "Admin": [],
-  "Owner": [],
-  "Users":[],
-  "HotelDetails":[],
-  "HotelBooking":[]
+  "Owner": [
+    {
+      "userName": "abhishek",
+      "Email": "abhishek333roy@gmail.com",
+      "MobNo": "9518595749",
+      "Password": "abhi@123",
+      "ConfirmPassword": "abhi@123",
+      "Gender": "Male",
+      "id": 1
+    },
+    {
+      "userName": null,
+      "Email": null,
+      "MobNo": null,
+      "Password": null,
+      "ConfirmPassword": null,
+      "Gender": null,
+      "id": 2
+    },
+    {
+      "userName": null,
+      "Email": null,
+      "MobNo": null,
+      "Password": null,
+      "ConfirmPassword": null,
+      "Gender": null,
+      "id": 3
+    },
+    {
+      "userName": null,
+      "Email": null,
+      "MobNo": null,
+      "Password": null,
+      "ConfirmPassword": null,
+      "Gender": null,
+      "id": 4
+    },
+    {
+      "userName": null,
+      "Email": null,
+      "MobNo": null,
+      "Password": null,
+      "ConfirmPassword": null,
+      "Gender": null,
+      "id": 5
+    },
+    {
+      "userName": null,
+      "Email": null,
+      "MobNo": null,
+      "Password": null,
+      "ConfirmPassword": null,
+      "Gender": null,
+      "id": 6
+    }
+  ],
+  "Users": [],
+  "HotelDetails": [],
+  "HotelBooking": [
+    {
+      "Name": "anhishek",
+      "MobNo": "951855",
+      "Hotelname": "paradise",
+      "HotelAddress": "datal",
+      "roomAvailable": "yeas",
+      "Usercheck": "yes",
+      "userpass": "abhi123",
+      "id": 1
+    }
+  ]
 }

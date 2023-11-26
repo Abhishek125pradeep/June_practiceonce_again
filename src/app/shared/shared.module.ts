@@ -4,7 +4,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import {MatRadioModule} from '@angular/material/radio';
+import{ HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [],
@@ -13,16 +14,20 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatInputModule,
     FormsModule ,
-    
+    MatRadioModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatFormFieldModule 
 
   ],
   exports:[
     MatButtonModule,
     MatInputModule,
     FormsModule ,
-  
+    MatRadioModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatFormFieldModule 
   ]
 })
 export class SharedModule { }

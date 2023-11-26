@@ -1,1 +1,40 @@
+<body>
 
+    <h3 class="heading"><i>Sign up to create Acconunt</i></h3>
+    <div class="main">
+        <br><br>
+        <form [formGroup]="signUpForm" class="forms">
+            <mat-form-field >
+                <mat-label>Enter Name</mat-label>
+                <input matInput appNameValidation placeholder="Enter your name" formControlName="userName">
+                <!-- <mat-hint   *ngIf="!signUpForm.get('userName').touched"> Please Enter User Name   </mat-hint>  -->
+                <mat-error>Userr Name is <strong>required</strong></mat-error>
+
+                
+            </mat-form-field> <br>
+            <mat-form-field class="input">
+                <mat-label>Enter Email</mat-label>
+                <input matInput appNameValidation placeholder="Enter your Email id" formControlName="Email">
+            </mat-form-field> <br> <br>
+            <mat-form-field class="input">
+                <mat-label>Enter Mobile</mat-label>
+                <input matInput appNameValidation placeholder="Enter your Mobile Number" formControlName="MobNo">
+            </mat-form-field><br> <br>
+            <mat-form-field class="input">
+                <mat-label>Enter Password</mat-label>
+                <input matInput appNameValidation placeholder="Enter Password" formControlName="Password" >
+            </mat-form-field><br> <br>
+            <mat-form-field class="input">
+                <mat-label>Enter Confirm Password</mat-label>
+                <input matInput appNameValidation placeholder="Enter ConfirmPassword" formControlName="ConfirmPassword">
+            </mat-form-field><br> <br>
+            <mat-radio-group formControlName="Gender">
+                <mat-label> <i>Select Gender</i> </mat-label>
+                <mat-radio-button   [value]="Male"><i>Male</i> </mat-radio-button>
+                <mat-radio-button  [value]="FeMale"><i>Female</i></mat-radio-button>
+                <mat-radio-button   [value]="other"><i>Other</i> </mat-radio-button>
+                <button (click)="Submit(signUpForm.value)"  mat-raised-button color="primary">Sumbit</button>
+            </mat-radio-group><br> <br>
+        </form>
+    </div>
+</body>

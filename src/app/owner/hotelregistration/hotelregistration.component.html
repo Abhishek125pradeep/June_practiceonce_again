@@ -1,0 +1,48 @@
+<div class="bg-img">
+<div class="img-form">
+<div class="main">
+
+]
+    <div class="main-form">
+    <form  [formGroup]="Hotelregistration">
+        <mat-form-field>
+            <mat-label>Owner Name</mat-label>
+            <input  matInput placeholder= "Enter Owner Name"  formControlName="Name">
+            <mat-hint>Enter Owner Name Here</mat-hint>
+        </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label> Mobile Number </mat-label>
+            <input  matInput placeholder="Enter Mobile Number Here"  formControlName="MobNo" >
+            <mat-hint>Enter Mobile Number Here</mat-hint>
+        </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label>Hotel Name</mat-label>
+            <input  matInput placeholder="Enter Hotel Name Here"   formControlName="Hotelname">
+            <mat-hint>Enter Hotel Name Here</mat-hint>
+        </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label>Hotel Address </mat-label> 
+            <input matInput placeholder="Enter Hotel Address Here"  formControlName="HotelAddress"> 
+            <mat-hint>Enter Hotel Address Here</mat-hint>
+        </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label>roomAvailable</mat-label>
+            <input type="text" matInput placeholder="roomAvailable"  formControlName="roomAvailable">
+            <mat-hint>roomAvailable</mat-hint>
+        </mat-form-field><br><br>
+        <mat-form-field>
+           <mat-label>User check</mat-label>  
+           <input type="text" matInput placeholder="User check"  formControlName="Usercheck">
+           <mat-hint>User check</mat-hint>
+        </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label>User Password</mat-label>
+            <input type="text"  matInput placeholder="User Password"  formControlName="userpass">
+            <mat-hint>User Hint</mat-hint>
+        </mat-form-field><br><br>
+        <button (click)="Submit(Hotelregistration.value)" mat-raised-button color="primary">Submit</button>
+     </form>
+    </div>
+</div>
+</div>
+</div>

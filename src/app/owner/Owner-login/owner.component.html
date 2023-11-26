@@ -1,16 +1,24 @@
+
 <div class="img">
+    <div class="div-container">
 <div class="main">
     <h3 style="text-align: center;">Login Here</h3>
     <form #SignInform="ngForm" class="forms">
         <mat-form-field>
             <mat-label>Enter User Id Here</mat-label>
-            <input  matInput placeholder="Enter User Id Here" class="inp">
+            <input  matInput placeholder="Enter User Id Here" class="inp"  name="fullname" #fullname="ngModel" ngModel required>
+            <mat-hint>Enter your name</mat-hint>
         </mat-form-field><br><br>
         <mat-form-field>
             <mat-label>Enter Password Here</mat-label>
-            <input  matInput placeholder="Enter User Id Here">
-        </mat-form-field>
+            <input  matInput placeholder="Enter User Id Here" name="Password" #Password="ngModel" ngModel required>
+            <mat-hint>Enter your valid password</mat-hint>
+        </mat-form-field><br><br><br>
+
+        <button (click)="Button(SignInform.value)" [disabled]="!SignInform.valid"  mat-raised-button color="primary" >Submit</button> <br><br>
+        <div>Not a member? &nbsp; <a routerLink="/Owner/Owner-Signup">Sign Up now</a></div>
         
     </form>
+</div>
 </div>
 </div>

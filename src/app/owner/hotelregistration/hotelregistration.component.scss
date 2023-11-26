@@ -1,0 +1,29 @@
+
+  
+
+.main{
+    border: 1px solid green;
+    width: 100%;
+    height: 75px;
+    background-color: mediumblue;
+    top: 100px;
+ 
+ 
+}
+.main-form{
+    width: 520px;
+    border: 1px solid #cb3709;
+    background-color: lightcyan;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    top: 120px;
+   text-align: center;
+   left: 35%
+}
+.bg-img{
+    background-image: url("~src/assets/images/hotel-succes-img.webp");
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
