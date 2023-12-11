@@ -5,25 +5,49 @@
     border: 1px solid green;
     width: 100%;
     height: 75px;
-    background-color: mediumblue;
+    background-color: black;
     top: 100px;
+  
  
  
 }
 .main-form{
     width: 520px;
-    border: 1px solid #cb3709;
-    background-color: lightcyan;
+    border: 1px solid black;
+    background-color: #fff;
     margin: auto;
     padding: 15px;
     position: absolute;
     top: 120px;
    text-align: center;
-   left: 35%
+   left: 35%;
+   height: 805px;
+   border-radius: 50px;
+   box-shadow: 0 15px 40px rgba(0,0,0,.5);
+   
 }
 .bg-img{
-    background-image: url("~src/assets/images/hotel-succes-img.webp");
+    position: absolute;
+    // top: 120px;
     background-size: cover;
     height: 1000px;
     width: 100%;
+    background-image: url("~src/assets/images/paper4.jpg");
+}
+.i{
+    font-size: 30px;
+    color: beige;
+    position: absolute;
+    margin-left: 604px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);;
+    top: 25px;
+}
+.mat-form{
+    width: 300px;
+}
+.back{
+    position: absolute;
+    top: 25px;
+    margin-left: 35px;
+    font-size: 20px;
 }

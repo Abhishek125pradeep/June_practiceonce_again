@@ -6,12 +6,16 @@
     <form #SignInform="ngForm" class="forms">
         <mat-form-field>
             <mat-label>Enter User Id Here</mat-label>
-            <input  matInput placeholder="Enter User Id Here" class="inp"  name="fullname" #fullname="ngModel" ngModel required>
+            <input  matInput placeholder="Enter User Id Here" class="inp"  name="fullname" #fullname="ngModel" ngModel required pattern="[a-z A-Z ]*$" maxlength="15" minlength="2">
             <mat-hint>Enter your name</mat-hint>
+            <mat-error *ngIf="fullname.errors?.['pattern'] &&!fullname.errors?.['minlength'] && !fullname.errors?.['maxlength']" >Name should be in only Alphabates</mat-error>
+            <mat-error *ngIf="fullname.errors?.['maxlength']" >Name should be have maximum 15 letters</mat-error>
+            <mat-error *ngIf="fullname.errors?.['minlength']" >Name should be have minimum 2 letters</mat-error>
         </mat-form-field><br><br>
         <mat-form-field>
             <mat-label>Enter Password Here</mat-label>
             <input  matInput placeholder="Enter User Id Here" name="Password" #Password="ngModel" ngModel required>
+            <mat-icon matSuffix>visibility_off</mat-icon>
             <mat-hint>Enter your valid password</mat-hint>
         </mat-form-field><br><br><br>
 

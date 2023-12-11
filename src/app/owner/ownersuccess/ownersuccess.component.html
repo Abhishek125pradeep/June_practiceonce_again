@@ -1,7 +1,28 @@
 <div class="main-div">
-<div class="div">
-    <button routerLink="/Owner/Owner-Landing" class="reg-btn" mat-raised-button color="warn"> <i>Back</i></button>&nbsp; &nbsp;
-    <button class="reg-btn" mat-raised-button color="primary" routerLink="/Owner/Owner-registration"><i> Register New</i></button> &nbsp; &nbsp;
-    <button class="reg-btn" mat-raised-button color="accent"> <i>Hotel list</i></button>
+    <div class="div">
+        <button routerLink="/Owner/Owner-Landing" class="reg-btn" mat-raised-button color="warn">
+            <i>Back</i></button>&nbsp; &nbsp;
+        <button class="reg-btn" mat-raised-button color="primary" routerLink="/Owner/Owner-registration"><i> Register
+                New</i></button> &nbsp; &nbsp;
+        <button class="reg-btn" mat-raised-button color="accent" (click)="showHotelDetails()"> <i>Hotel
+                list</i></button>
+    </div>
+
+
+<div *ngIf="HoteldetailsBooking">
+    <table>
+        <tr>
+            <th *ngFor="let Headings of   HotelData">{{Headings}}</th>
+        </tr>
+        <tr *ngFor="let data of HoteldetailsBooking">
+            <td>{{data.Hotelname}}</td>
+            <td>{{data.HotelAddress}}</td>
+            <td>{{data.roomAvailable}}</td>
+            <td>{{data.MobNo}}</td>
+        </tr>
+          
+      
+    </table>
 </div>
 </div>
+<br>

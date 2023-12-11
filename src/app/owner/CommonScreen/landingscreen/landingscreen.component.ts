@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonApiService } from '../common-api.service';
 
 @Component({
   selector: 'app-landingscreen',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./landingscreen.component.scss']
 })
 export class LandingscreenComponent {
-constructor(private route:Router){
+constructor(private route:Router,private commonApiService:CommonApiService){
 
 }
 Admin(){
@@ -19,4 +20,8 @@ Owner(){
 User(){
   this.route.navigateByUrl('/User/User-login')
 }
+// journey(Name:any){
+//   this.commonApiService.Journey = Name;
+//   this.route.navigateByUrl('/Admin/admin-login')
+// }
 }

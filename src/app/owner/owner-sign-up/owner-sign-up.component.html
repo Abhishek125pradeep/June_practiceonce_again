@@ -1,40 +1,70 @@
 <body>
-
-    <h3 class="heading"><i>Sign up to create Acconunt</i></h3>
+    
+    <h3 class="heading"> <i>Sign up to create Acconunt</i></h3>
+    <button routerLink="/Owner/Owner-Landing" class="btn" mat-raised-button color="primary">back</button>
     <div class="main">
         <br><br>
         <form [formGroup]="signUpForm" class="forms">
-            <mat-form-field >
+            <mat-form-field class="mat-form">
                 <mat-label>Enter Name</mat-label>
                 <input matInput appNameValidation placeholder="Enter your name" formControlName="userName">
-                <!-- <mat-hint   *ngIf="!signUpForm.get('userName').touched"> Please Enter User Name   </mat-hint>  -->
-                <mat-error>Userr Name is <strong>required</strong></mat-error>
+                <mat-hint> Please Enter User Name </mat-hint>
+                <!-- <mat-error  *ngIf="!signUpForm.get('userName')?.touched">Userr Name is <strong>required</strong></mat-error> -->
 
-                
-            </mat-form-field> <br>
-            <mat-form-field class="input">
+                <mat-error
+                    *ngIf="signUpForm.get('userName')?.errors?.['pattern'] && !signUpForm.get('userName')?.errors?.['maxlength'] && !signUpForm.get('userName')?.errors?.['minlength']">Name
+                    Should be have only in Alphabates</mat-error>
+                <mat-error *ngIf="signUpForm.get('userName')?.errors?.['maxlength']">Name Should be have only in Maximum
+                    20 charectors</mat-error>
+                <mat-error *ngIf="signUpForm.get('userName')?.errors?.['minlength']">Name Should be have only in Minimum
+                    2 charectors</mat-error>
+
+
+            </mat-form-field> <br><br>
+            <mat-form-field class="input" class="mat-form">
                 <mat-label>Enter Email</mat-label>
                 <input matInput appNameValidation placeholder="Enter your Email id" formControlName="Email">
+                <mat-hint>Enter Email Id Here</mat-hint>
+                <mat-error *ngIf="signUpForm.get('Email')?.errors?.['pattern']">Please Match Email Pattern</mat-error>
             </mat-form-field> <br> <br>
-            <mat-form-field class="input">
+            <mat-form-field class="input" class="mat-form">
                 <mat-label>Enter Mobile</mat-label>
                 <input matInput appNameValidation placeholder="Enter your Mobile Number" formControlName="MobNo">
+                <mat-hint>Enter your Mobile Number Here</mat-hint>
+                <mat-error
+                    *ngIf="signUpForm.get('MobNo')?.errors?.['pattern'] && !signUpForm.get('MobNo')?.errors?.['minlength'] && !signUpForm.get('MobNo')?.errors?.['maxlength']">
+                    Mobile Number Should be have only in digit</mat-error>
+                <mat-error *ngIf="signUpForm.get('MobNo')?.errors?.['maxlength']"> Mobile Number Should be have maximum
+                    10 charectors</mat-error>
+                <mat-error *ngIf="signUpForm.get('MobNo')?.errors?.['minlength']"> Mobile Number Should be have minimum
+                    10 charectors</mat-error>
             </mat-form-field><br> <br>
-            <mat-form-field class="input">
+            <mat-form-field class="input" class="mat-form">
                 <mat-label>Enter Password</mat-label>
-                <input matInput appNameValidation placeholder="Enter Password" formControlName="Password" >
+                <input matInput placeholder="Enter Password" formControlName="Password"
+                    (keyup)="Password()">
+                <mat-hint *ngIf="!signUpForm.get('Password')?.touched">Enter Password Here</mat-hint>
+                <mat-error *ngIf="!iSMatch ">Password and confirm Password Shoule be
+                    match</mat-error>
             </mat-form-field><br> <br>
-            <mat-form-field class="input">
+            <mat-form-field class="input" class="mat-form">
                 <mat-label>Enter Confirm Password</mat-label>
-                <input matInput appNameValidation placeholder="Enter ConfirmPassword" formControlName="ConfirmPassword">
+                <input matInput  placeholder="Enter ConfirmPassword" formControlName="ConfirmPassword"
+                    (keyup)="ConfirmPassword()">
+                <mat-hint *ngIf="!signUpForm.get('ConfirmPassword')?.touched"> Enter Confirm Password Here</mat-hint>
+                <mat-error *ngIf="!iSMatch && signUpForm.get('ConfirmPassword')?.dirty">Password and confirm Password
+                    Shoule be match</mat-error>
             </mat-form-field><br> <br>
             <mat-radio-group formControlName="Gender">
                 <mat-label> <i>Select Gender</i> </mat-label>
-                <mat-radio-button   [value]="Male"><i>Male</i> </mat-radio-button>
-                <mat-radio-button  [value]="FeMale"><i>Female</i></mat-radio-button>
-                <mat-radio-button   [value]="other"><i>Other</i> </mat-radio-button>
-                <button (click)="Submit(signUpForm.value)"  mat-raised-button color="primary">Sumbit</button>
+                <mat-radio-button value="Male" (change)="gender($event)"><i>Male</i> </mat-radio-button>
+                <mat-radio-button value="FeMale" (change)="gender($event)"><i>Female</i></mat-radio-button>
+                <mat-radio-button value="other" (change)="gender($event)"><i>Other</i> </mat-radio-button>
+                <mat-error *ngIf="!isGenderSelected">Gender Is Required</mat-error> <br>
+                <button (click)="Submit(signUpForm.value)" mat-raised-button color="primary">Sumbit</button>
             </mat-radio-group><br> <br>
+            <strong>Already Signin </strong>&nbsp;&nbsp; <a routerLink="/Owner/Owner-login"> LogIn Here</a>
         </form>
     </div>
+
 </body>

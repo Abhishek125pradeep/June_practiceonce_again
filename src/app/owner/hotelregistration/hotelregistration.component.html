@@ -1,48 +1,67 @@
-<div class="bg-img">
 <div class="img-form">
-<div class="main">
 
-]
-    <div class="main-form">
-    <form  [formGroup]="Hotelregistration">
-        <mat-form-field>
-            <mat-label>Owner Name</mat-label>
-            <input  matInput placeholder= "Enter Owner Name"  formControlName="Name">
-            <mat-hint>Enter Owner Name Here</mat-hint>
-        </mat-form-field><br><br>
-        <mat-form-field>
-            <mat-label> Mobile Number </mat-label>
-            <input  matInput placeholder="Enter Mobile Number Here"  formControlName="MobNo" >
-            <mat-hint>Enter Mobile Number Here</mat-hint>
-        </mat-form-field><br><br>
-        <mat-form-field>
-            <mat-label>Hotel Name</mat-label>
-            <input  matInput placeholder="Enter Hotel Name Here"   formControlName="Hotelname">
-            <mat-hint>Enter Hotel Name Here</mat-hint>
-        </mat-form-field><br><br>
-        <mat-form-field>
-            <mat-label>Hotel Address </mat-label> 
-            <input matInput placeholder="Enter Hotel Address Here"  formControlName="HotelAddress"> 
-            <mat-hint>Enter Hotel Address Here</mat-hint>
-        </mat-form-field><br><br>
-        <mat-form-field>
-            <mat-label>roomAvailable</mat-label>
-            <input type="text" matInput placeholder="roomAvailable"  formControlName="roomAvailable">
-            <mat-hint>roomAvailable</mat-hint>
-        </mat-form-field><br><br>
-        <mat-form-field>
-           <mat-label>User check</mat-label>  
-           <input type="text" matInput placeholder="User check"  formControlName="Usercheck">
-           <mat-hint>User check</mat-hint>
-        </mat-form-field><br><br>
-        <mat-form-field>
-            <mat-label>User Password</mat-label>
-            <input type="text"  matInput placeholder="User Password"  formControlName="userpass">
-            <mat-hint>User Hint</mat-hint>
-        </mat-form-field><br><br>
-        <button (click)="Submit(Hotelregistration.value)" mat-raised-button color="primary">Submit</button>
-     </form>
+    <div class="bg-img">
+
+        <div class="main"> <button class="back" mat-raised-button color="primary" (click)="Back()"
+                routerLink="/Owner/Ownersuccess"> Back</button>
+            <div class="i"><i>Owner Registration Form</i></div>
+
+
+            <div class="main-form">
+                <form [formGroup]="Hotelregistration">
+                    <mat-form-field class="mat-form">
+                        <mat-label>Owner Name</mat-label>
+                        <input matInput placeholder="Enter Owner Name" formControlName="Name">
+                        <mat-hint>Enter Owner Name Here</mat-hint> <br>
+                        <mat-error
+                            *ngIf="Hotelregistration.get('Name')?.errors?.['pattern'] && !Hotelregistration.get('Name')?.errors?.['maxlength'] && !Hotelregistration.get('Name')?.errors?.['minlength']">User
+                            Name Should Have Only in Alphabates </mat-error>
+                        <mat-error *ngIf="Hotelregistration.get('Name')?.errors?.['maxlength']">Name should Have Maximum
+                            15 words </mat-error>
+                        <mat-error *ngIf="Hotelregistration.get('Name')?.errors?.['minlength']">Name Should Have
+                            Mininmum 2 words </mat-error>
+                    </mat-form-field><br><br>
+                    <mat-form-field class="mat-form">
+                        <mat-label> Mobile Number </mat-label>
+                        <input matInput placeholder="Enter Mobile Number Here" formControlName="MobNo">
+                        <mat-hint>Enter Mobile Number Here</mat-hint>
+                        <mat-error *ngIf="Hotelregistration.get('MobNo')?.errors?.['pattern']">Mobile Number Should have
+                            Only In digit</mat-error>
+                    </mat-form-field><br><br>
+                    <mat-form-field class="mat-form">
+                        <mat-label>Hotel Name</mat-label>
+                        <input matInput placeholder="Enter Hotel Name Here" formControlName="Hotelname">
+                        <mat-error *ngIf="Hotelregistration.get('Hotelname')?.errors?.['pattern']">Hotel Name Should Be
+                            In Alphabates</mat-error>
+                        <mat-hint>Enter Hotel Name Here</mat-hint>
+                    </mat-form-field><br><br>
+                    <mat-form-field class="mat-form">
+                        <mat-label>Hotel Address </mat-label>
+                        <input matInput placeholder="Enter Hotel Address Here" formControlName="HotelAddress" required>
+                        <mat-hint>Enter Hotel Address Here</mat-hint>
+                        <mat-error *ngIf="Hotelregistration.get('HotelAddress')?.errors?.['required']">Hotel Address
+                            required</mat-error>
+                    </mat-form-field><br><br>
+                    <mat-form-field class="mat-form">
+                        <mat-label>roomAvailable</mat-label>
+                        <input type="text" matInput placeholder="roomAvailable" formControlName="roomAvailable">
+                        <mat-hint>roomAvailable</mat-hint>
+                    </mat-form-field><br><br>
+                    <mat-form-field class="mat-form">
+                        <mat-label>User check</mat-label>
+                        <input type="text" matInput placeholder="User check" formControlName="Usercheck">
+                        <mat-hint>User check</mat-hint>
+                    </mat-form-field><br><br>
+                    <mat-form-field class="mat-form">
+                        <mat-label>User Password</mat-label>
+                        <input type="text" matInput placeholder="User Password" formControlName="userpass">
+                        <mat-hint>User Hint</mat-hint>
+                    </mat-form-field><br><br><br><br>
+                    <button (click)="Submit(Hotelregistration.value)" mat-raised-button
+                        color="primary">Submit</button><br><br>
+
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 </div>

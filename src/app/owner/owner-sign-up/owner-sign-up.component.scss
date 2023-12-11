@@ -1,7 +1,7 @@
 body{
   margin: 0;  
   padding: 0;
-  height: 800px;
+  height: 850px;
   background-image:url("~src/assets/images/sign-up.jpg") ;
   background-size: cover;
  font-family: sans-serif;
@@ -15,10 +15,11 @@ body{
     border: 1px solid red;
     background-color: aliceblue;
     box-shadow: inset;
+   
 }
 .main{
     width: 25%;
-    height: 600px;
+    height: 675px;
     background: #fff;
     margin: 0 auto;
     border: 2px solid #fff;
@@ -29,4 +30,9 @@ body{
 }
 .input-class{
     width: 200px;
+}
+.mat-form{
+    width: 300px;}
+.btn{
+    margin-right: 35px;
 }

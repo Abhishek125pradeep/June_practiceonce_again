@@ -9,6 +9,7 @@ import { OwnerSIgnUpComponent } from './owner-sign-up/owner-sign-up.component';
 import { OwnerlandingComponuntComponent } from './ownerlanding-componunt/ownerlanding-componunt.component';
 import { OwnersuccessComponent } from './ownersuccess/ownersuccess.component';
 import { HotelregistrationComponent } from './hotelregistration/hotelregistration.component';
+import { OwnerhotelListComponent } from './ownerhotel-list/ownerhotel-list.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HotelregistrationComponent } from './hotelregistration/hotelregistratio
     OwnerSIgnUpComponent,
     OwnerlandingComponuntComponent,
     OwnersuccessComponent,
-    HotelregistrationComponent
+    HotelregistrationComponent,
+    OwnerhotelListComponent
   ],
   imports: [
     CommonModule,

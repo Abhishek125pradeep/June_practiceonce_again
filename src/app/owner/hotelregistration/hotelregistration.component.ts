@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonApiService } from '../CommonScreen/common-api.service';
 
@@ -11,16 +11,16 @@ import { CommonApiService } from '../CommonScreen/common-api.service';
 export class HotelregistrationComponent {
   Hotelregistration!:FormGroup;
   OwnerApi: any;
-  constructor(private route:Router,private fb:FormBuilder, private commonApiService:CommonApiService){}
+  constructor(private route:Router,private fb:FormBuilder, private commonApiService:CommonApiService, private rout:Router){}
   ngOnInit(){
     this.registrationformControl()
   }
   registrationformControl(){
     this.Hotelregistration= this.fb.group({
-      Name:['',],
-      MobNo:['',],
-      Hotelname:['',],
-      HotelAddress:['',],
+      Name:['',[Validators.pattern("[A-Za-z ]*$"),Validators.maxLength(15),Validators.minLength(2)]],
+      MobNo:['',[Validators.pattern("[0-9]*$")]],
+      Hotelname:['',[Validators.pattern("[A-Za-z ]*$")]],
+      HotelAddress:['',[Validators.required]],
       roomAvailable:['',],
       Usercheck:['',],
       userpass:['',]
@@ -28,10 +28,17 @@ export class HotelregistrationComponent {
   }
 
   Submit(data:any){
+    
 console.log(data);
-let Ownerendpoint="HotelBooking"
+let Ownerendpoint="HotelDetails"
 this.commonApiService.PostApicall(data,Ownerendpoint).subscribe(Ownerresponser=>{
-  this.OwnerApi =Ownerresponser
+  this.OwnerApi =Ownerresponser;
+ 
 })
+alert('Hotel Registration Successfully....!!');
+this.route.navigateByUrl('/Owner/Ownersuccess')
+  }
+  Back(){
+    // this.rout.navigateByUrl("/Owner/Ownersuccess")
   }
 }
