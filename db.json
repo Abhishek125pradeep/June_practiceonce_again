@@ -2,157 +2,13 @@
   "Admin": [],
   "Owner": [
     {
-      "userName": "abhishek",
+      "Name": "Abhishek",
       "Email": "abhishek333roy@gmail.com",
       "MobNo": "9518595749",
       "Password": "abhi@123",
       "ConfirmPassword": "abhi@123",
       "Gender": "Male",
       "id": 1
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 2
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 3
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 4
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 5
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 6
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 7
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 8
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 9
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": "other",
-      "id": 10
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 11
-    },
-    {
-      "userName": "",
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 12
-    },
-    {
-      "userName": "",
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 13
-    },
-    {
-      "userName": null,
-      "Email": null,
-      "MobNo": null,
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 14
-    },
-    {
-      "userName": "",
-      "Email": "",
-      "MobNo": "",
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 15
-    },
-    {
-      "userName": "",
-      "Email": "",
-      "MobNo": "",
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 16
-    },
-    {
-      "userName": "",
-      "Email": "",
-      "MobNo": "",
-      "Password": null,
-      "ConfirmPassword": null,
-      "Gender": null,
-      "id": 17
     },
     {
       "userName": "nagrale paraeep",
@@ -504,126 +360,132 @@
       "ConfirmPassword": "332323",
       "Gender": "Male",
       "id": 56
-    },
-    {
-      "userName": "fsdfsdfsd",
-      "Email": "abhishek333roy@gmail.com",
-      "MobNo": "6465495696",
-      "Password": "6565+65",
-      "ConfirmPassword": "332323",
-      "Gender": "other",
-      "id": 57
-    },
-    {
-      "userName": "abhushek",
-      "Email": "abhishek333roy@gmail.com",
-      "MobNo": "4856468545",
-      "Password": "abhi@123",
-      "ConfirmPassword": "abhi@123",
-      "Gender": "Male",
-      "id": 58
-    },
-    {
-      "userName": "fdlkfjkfjdi",
-      "Email": "abhishek333roy@gmail.com",
-      "MobNo": "5486488488",
-      "Password": "abhi@123",
-      "ConfirmPassword": "abhi123",
-      "Gender": "Male",
-      "id": 59
     }
+    
   ],
-  "Users": [
-    {
-      "userName": "abhishek",
-      "userEmail": "abhishek333roy@gmail.com",
-      "userMob": "9518595749",
-      "gender": "Male",
-      "userpass": "Abhishek123@",
-      "userCheck": true,
-      "userConfirmpass": "Abhishek123@",
-      "id": 1
-    },
-    {
-      "userName": "Abhishek",
-      "userEmail": "abhishek333roy@gmail.com",
-      "userMob": "9518595749",
-      "gender": "Male",
-      "userpass": "Abhi@1234",
-      "userCheck": true,
-      "userConfirmpass": "Abhi@1234",
-      "id": 2
-    }
-  ],
+  "USERS":[],
   "HotelDetails": [
     {
       "Name": "Abhishek",
-      "MobNo": "9518595749",
-      "Hotelname": "paradise",
-      "HotelAddress": "nagpur",
-      "roomAvailable": "yes",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Laziz",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "8",
       "Usercheck": "yes",
-      "userpass": "abhi123",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
       "id": 1
     },
     {
       "Name": "Abhishek",
-      "MobNo": "9518595749",
-      "Hotelname": "Hotel Center Point",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Paradise",
       "HotelAddress": "Nagpur",
-      "roomAvailable": "yes",
+      "roomAvailable": "",
       "Usercheck": "yes",
       "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
+      "id": 2
+    },
+    {
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Luxuary",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
+      "id": 3
+    },
+    {
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Obroy",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
+      "id": 4
+    },
+    {
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel FourCoins",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
+      "id": 5
+    },
+    {
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Anadpace",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
+      "id": 6
+    },
+    {
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel CenterPoint",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
+      "id": 7
+    },
+    {
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Shahu",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
       "id": 8
     },
     {
-      "Name": "NagraleABhishek",
+      "Name": "Abhishek",
       "MobNo": "7218814543",
-      "Hotelname": "Hote Shahu",
-      "HotelAddress": "Pulgao",
-      "roomAvailable": "abcd",
-      "Usercheck": "no",
-      "userpass": "nagral@123",
+      "Hotelname": "Hotel Royal",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
       "id": 9
     },
     {
-      "Name": "Gourav nagrale",
-      "MobNo": "84654654165",
-      "Hotelname": "Gourav Hotel",
-      "HotelAddress": "Sawangi",
-      "roomAvailable": "5",
-      "Usercheck": "7",
-      "userpass": "nag@123",
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Hotel Jab-we-Met",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
       "id": 10
     },
     {
-      "Name": "Kareena Kapoor",
-      "MobNo": "9849774974",
-      "Hotelname": "Hotel Obroy",
-      "HotelAddress": "Mumbai",
-      "roomAvailable": "available",
-      "Usercheck": "check",
-      "userpass": "pass@123",
+      "Name": "Abhishek",
+      "MobNo": "7218814543",
+      "Hotelname": "Harisons",
+      "HotelAddress": "Nagpur",
+      "roomAvailable": "",
+      "Usercheck": "yes",
+      "userpass": "abhi@123",
+      "hotelMenu": "Nonveg",
       "id": 11
     }
   ],
-  "HotelBooking": [
-    {
-      "Name": "anhishek",
-      "MobNo": "951855",
-      "Hotelname": "paradise",
-      "HotelAddress": "datal",
-      "roomAvailable": "yeas",
-      "Usercheck": "yes",
-      "userpass": "abhi123",
-      "id": 1
-    },
-    {
-      "userName": "Abhisherk",
-      "userAddress": "daytal nagar",
-      "userMobile": "9518595714",
-      "userBookAm": "1000",
-      "id": 2
-    }
-  ]
+  "HotelDetailBooking":[]
 }

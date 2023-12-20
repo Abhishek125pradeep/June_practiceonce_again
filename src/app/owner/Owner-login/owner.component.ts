@@ -12,19 +12,20 @@ export class OwnerComponent {
   Journey!: string;
   constructor(private rout: Router, private commonApiService: CommonApiService) { }
   ngOnInit() {
-    this.getOwnerdata()
+    this.getOwnerdata();
     this.Journey = this.commonApiService.Journey;
   }
   Button(data: any) {
-    this.commonApiService.OwnerName = data.fullname;
+    // this.getOwnerdata()
     if (this.ownerdata) {
       let matchObj = this.ownerdata.find((itom: any) => {
-        if (itom.userName == data.fullname && itom.Password == data.Password) {
+        if (itom.Name == data.fullname && itom.Password == data.Password) {
           return itom
         }
       })
 
       if (matchObj) {
+        this.commonApiService.OwnerName = data.fullname;
         this.rout.navigateByUrl("/Owner/Ownersuccess")
       }
     }
@@ -37,6 +38,8 @@ export class OwnerComponent {
     let endpoint = "Owner"
     this.commonApiService.getownerdata(endpoint).subscribe(response => {
       this.ownerdata = response
+      console.log("Owner data", this.ownerdata);
+      
     })
   }
 

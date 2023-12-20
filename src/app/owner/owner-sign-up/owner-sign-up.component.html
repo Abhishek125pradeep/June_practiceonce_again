@@ -7,7 +7,7 @@
         <form [formGroup]="signUpForm" class="forms">
             <mat-form-field class="mat-form">
                 <mat-label>Enter Name</mat-label>
-                <input matInput appNameValidation placeholder="Enter your name" formControlName="userName">
+                <input matInput appNameValidation placeholder="Enter your name" formControlName="Name">
                 <mat-hint> Please Enter User Name </mat-hint>
                 <!-- <mat-error  *ngIf="!signUpForm.get('userName')?.touched">Userr Name is <strong>required</strong></mat-error> -->
 
@@ -64,7 +64,8 @@
                 <button (click)="Submit(signUpForm.value)" mat-raised-button color="primary">Sumbit</button>
             </mat-radio-group><br> <br>
             <strong>Already Signin </strong>&nbsp;&nbsp; <a routerLink="/Owner/Owner-login"> LogIn Here</a>
+           
         </form>
     </div>
-
+   
 </body>

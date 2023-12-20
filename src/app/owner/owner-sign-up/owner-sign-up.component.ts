@@ -24,7 +24,7 @@ export class OwnerSIgnUpComponent {
   }
   Signupformcontrol() {
     this.signUpForm = this.fb.group({
-      userName: ['', [Validators.pattern("[A-Za-z ]*$"), Validators.maxLength(20), Validators.minLength(2)]],
+      Name: ['', [Validators.pattern("[A-Za-z ]*$"), Validators.maxLength(20), Validators.minLength(2)]],
       Email: ['', [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
       MobNo: ['', [Validators.pattern("[0-9]*$"), Validators.maxLength(10), Validators.minLength(10)]],
       Password: [],

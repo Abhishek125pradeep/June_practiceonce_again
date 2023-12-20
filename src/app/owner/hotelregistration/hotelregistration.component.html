@@ -33,8 +33,10 @@
                         <input matInput placeholder="Enter Hotel Name Here" formControlName="Hotelname">
                         <mat-error *ngIf="Hotelregistration.get('Hotelname')?.errors?.['pattern']">Hotel Name Should Be
                             In Alphabates</mat-error>
-                        <mat-hint>Enter Hotel Name Here</mat-hint>
-                    </mat-form-field><br><br>
+                        <mat-hint> Hotel Name Here</mat-hint>
+                    <br><br>
+                        </mat-form-field>
+                       <br><br>
                     <mat-form-field class="mat-form">
                         <mat-label>Hotel Address </mat-label>
                         <input matInput placeholder="Enter Hotel Address Here" formControlName="HotelAddress" required>
@@ -42,9 +44,28 @@
                         <mat-error *ngIf="Hotelregistration.get('HotelAddress')?.errors?.['required']">Hotel Address
                             required</mat-error>
                     </mat-form-field><br><br>
+                    <mat-form-field class="mat-form"> 
+                        <mat-label>Enter The Hotel Menu</mat-label> 
+                       <input type="text" matInput formControlName="hotelMenu" required> 
+                       <mat-hint *ngIf="!Hotelregistration.get('hotelMenu')?.touched" class="hint">Please enter Hotel Menu </mat-hint> 
+                        <mat-error *ngIf="Hotelregistration.get('hotelMenu')?.hasError('required')">Hotel Menu is <strong>required</strong></mat-error> 
+                       </mat-form-field> <br><br><br>
                     <mat-form-field class="mat-form">
                         <mat-label>roomAvailable</mat-label>
-                        <input type="text" matInput placeholder="roomAvailable" formControlName="roomAvailable">
+                        
+                        <select matNativeControl formControlName="roomAvailable"> 
+                            <option value="" selected ></option> 
+                            <option value="1">1</option> 
+                            <option value="2">2</option> 
+                            <option value="3">3</option> 
+                            <option value="4">4</option> 
+                            <option value="5">5</option> 
+                            <option value="6">6</option> 
+                            <option value="7">7</option> 
+                            <option value="8">8</option> 
+                            <option value="9">9</option> 
+                            <option value="10">10</option> 
+                          </select> 
                         <mat-hint>roomAvailable</mat-hint>
                     </mat-form-field><br><br>
                     <mat-form-field class="mat-form">
@@ -57,9 +78,9 @@
                         <input type="text" matInput placeholder="User Password" formControlName="userpass">
                         <mat-hint>User Hint</mat-hint>
                     </mat-form-field><br><br><br><br>
-                    <button (click)="Submit(Hotelregistration.value)" mat-raised-button
+                    <button *ngIf="!recordbyid"(click)="Submit(Hotelregistration.value)" mat-raised-button
                         color="primary">Submit</button><br><br>
-
+                          <button *ngIf="recordbyid"(click)="Update()" mat-raised-button color="primary">Update</button>
                 </form>
             </div>
         </div>

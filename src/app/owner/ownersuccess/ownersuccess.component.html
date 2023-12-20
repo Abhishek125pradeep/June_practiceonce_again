@@ -10,19 +10,23 @@
 
 
 <div *ngIf="HoteldetailsBooking">
-    <table>
+    <table class="table-container">
         <tr>
             <th *ngFor="let Headings of   HotelData">{{Headings}}</th>
+      
         </tr>
         <tr *ngFor="let data of HoteldetailsBooking">
-            <td>{{data.Hotelname}}</td>
+            <td>{{data.Hotelname}}</td>   
+            <td>{{data.MobNo}}</td>
             <td>{{data.HotelAddress}}</td>
             <td>{{data.roomAvailable}}</td>
-            <td>{{data.MobNo}}</td>
+            <td ><mat-icon  (click)="edit(data.id)" >create</mat-icon></td>
+            <td ><mat-icon (click)="delete(data.id)">delete</mat-icon></td>
         </tr>
-          
+        
       
     </table>
 </div>
 </div>
 <br>
+

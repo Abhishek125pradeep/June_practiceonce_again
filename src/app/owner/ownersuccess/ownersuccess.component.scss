@@ -8,9 +8,20 @@
     height: 64px;
     background-color:navy;
 }
-// .main-div{
-//     background-image: url("~src/assets/images/Hotel-reg.jpg");
-//     background-size: cover;
-//     height: 100%;
-//     width: 100%;
-// }
+.main-div{
+     background-image: url("~src/assets/images/Hotel-reg.jpg");
+    background-size: cover;
+    height: 100%;
+     width: 100%;
+}
+.table-container{
+    height: 130px;
+    width: 520px;
+    padding: 10px 10px;
+    background-color: burlywood;
+    text-align: center;
+}
+table,th,tr,td{
+    border: 1px solid greenyellow;
+    border-collapse: collapse;
+}

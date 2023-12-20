@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CommonApiService {
+  recordById: any;
+  id:any;
+ 
   apiurl = "http://localhost:3000"
   // Url = "http://localhost:3000/";
   Journey!: string;
@@ -18,4 +21,8 @@ export class CommonApiService {
     let url = this.apiurl + "/" + endpoint;
     return this.http.get(url)
   }
+  pathchapicall(endpoint:any,id:any,formdata:any){
+    let url = this.apiurl+"/"+id;
+    return this.http.patch(url,formdata)
+  }  
 }
